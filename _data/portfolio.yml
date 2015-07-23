@@ -27,9 +27,9 @@ skills:
 - {name: Learning, value: '10'}
 - {name: Planning, value: '10'}
 - {name: Workaholic, value: '8'}
-- {name: Programming, value: '5'}
+- {name: Programming, value: '6'}
 - {name: Visual Design, value: '7'}
-- {name: UX/UI, value: '5'}
+- {name: UX/UI, value: '6'}
 
 #------------------------------------------------------
 # Portfolio Section
