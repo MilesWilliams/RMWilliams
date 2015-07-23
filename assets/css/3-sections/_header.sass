@@ -1,0 +1,137 @@
+
+body
+  margin: 0 0 0 0
+
+
+.header
+
+
+#landing
+  background:
+    position: relative
+    repeat: no-repeat
+    attachment: fixed
+  height: 100vh
+  background-size: cover
+  z-index: -1
+  overflow: hidden
+
+
+
+
+
+
+#nav
+  background:
+    color: rgba(255, 255, 255, 0.90)
+  height: 50px
+  border-bottom: $accent 2px solid
+  position: fixed
+  width: 100%
+  z-index: 300
+  opacity: 1
+  transition: all 1s ease
+
+  &.hiding
+    opacity: 0
+
+
+
+
+  &:hover
+    background-color: rgba(255, 255, 255, 1)
+
+  .logo
+    height: 50px
+    width: 250px
+    margin: 2px 0px 15px auto
+    background:
+      image: url(/assets/images/logo.svg)
+      repeat: no-repeat
+      size: cover
+    display: inline-block
+
+
+  .nav-item
+    margin: 16.5px 45px 0 0
+    display: inline-block
+    @extend %Museo-300
+    @extend %font-accent
+    font-size: 17px
+    float: right
+    text-decoration: none
+    line-height: 1
+    text-transform: uppercase
+    transition: all 0.2s ease
+
+
+    &:hover
+      transform: scale(1.2)
+      font-weight: 800
+
+.container
+  clear: both
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+
+  .heading
+    text-align: center
+    @extend %Museo-700
+    font:
+      size: 86px
+    color: white
+    letter-spacing: 0.05em
+    margin: 30vh 0 20px 0
+    text-transform: uppercase
+
+  span
+    display: inline-block
+    padding: 0.5em 0.6em
+    border: rgba(255,255,255,0.68) solid 10px
+    border-radius: 15px
+    z-index: -10
+
+
+
+
+  .kicker
+    @extend %Museo-500
+    font-size: 34px
+    color: white
+    text-align: center
+    margin: 0
+    line-height: 1
+    text-transform: uppercase
+    z-index: 100
+@media (max-width: 720px)
+  .container
+
+
+  #nav
+    .logo
+      height: 40px
+      width: 200px
+      margin: 8px 0px 15px auto
+
+    .nav-item
+      margin: 16.5px 15px 0 0
+      font-size: 16px
+
+  @media (max-width: 590px)
+
+  .container
+
+
+  #nav
+    .logo
+      height: 30px
+      width: 150px
+      margin: 8px 0px 15px auto
+
+    .nav-item
+      margin: 16.5px 13px 0 0
+      font-size: 13px

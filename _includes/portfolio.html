@@ -1,0 +1,25 @@
+<section id="portfolio">
+
+  <h1>Portfolio</h1>
+<hr class="bar">
+  <div class="description">
+    <p>
+      <strong>The first 2 images</strong> are of personal websites that I am curently working on but not yet hosted, however the others are not mine and are simply used as dummy images untill I can replace them.
+    </p>
+
+  </div>
+<hr class="bar2">
+  <div class="portfolio-container">
+
+    {% for projects in site.data.portfolio.projects %}
+    <a href="" class="project-unit" style="background-image: url(assets/images/work/{{ projects.folder}}/thumb.jpg)">
+      <div class="project-overlay">
+        <strong> {{ projects.name }} </strong>
+      </div>
+    </a>
+
+    {% endfor %}
+
+
+  </div>
+</section>

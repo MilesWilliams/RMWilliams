@@ -1,0 +1,16 @@
+# Layout settings
+
+animation: "bounceOut"
+
+# Images
+
+logo: assets/images/logo.svg
+hero: assets/images/hero-bg.jpg
+contact: assets/images/contact.jpg
+passion: assets/images/passion1.jpg
+freefalling: assets/images/basejumping.jpg
+jumper: assets/images/jumper.png
+apple: assets/images/apple.svg
+martini: assets/images/martini.svg
+suitcase: assets/images/suitcase.svg
+world: assets/images/world.svg

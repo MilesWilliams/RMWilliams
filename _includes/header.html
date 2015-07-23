@@ -1,0 +1,20 @@
+<header class="header">
+  <div id="landing" style="background-image: url({{ site.data.layout.hero }})">
+
+
+    <nav id="nav" class="hiding">
+      <a href="#landing"> <div class="logo" style="background-image: url({{ site.data.layout.logo }})"></div></a>
+      {% for item in site.data.portfolio.menu %}
+        <a class="nav-item"href="{{ item.url}}">{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="container">
+
+
+      <h1 class="heading"><span class="span"> {{site.data.portfolio.title}} </span></h1>
+      <p class="kicker"> {{site.data.portfolio.description}}</p>
+
+    </div>
+  </div>
+</header>

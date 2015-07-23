@@ -1,0 +1,65 @@
+# Portfoio settings
+#--------------------
+title: Robert M Williams
+email: robertmileswilliams@icloud.com
+description: "Designer // Creator // Dreamer"
+
+#MENU ITEM LIST
+
+menu:
+- {name: Contact, url: '#contact'}
+- {name: Portfolio, url: '#portfolio'}
+- {name: Skills, url: '#skills'}
+- {name: About, url: '#about-me'}
+
+
+#------------------------------------------------------
+# About Section
+
+avatar: assets/images/face.jpg
+blurb: <p><strong>With an eagerness </strong> to learn and a willingness to always do more, I am always the first and last person through the door. Beach lover by day and cocktail bar by night, I come across as a talk able and friendly person – with a slight OCD personality, or so I’m told. </p><p>A quick leaner, with a methodical mind-set and a slightly over-active imagination. Spontaneous personality with a love for the outdoors, my biggest flaw would be always trying to over think/do things – be it design or programming, I often find myself having to hold myself back and to remember to ‘K.I.S.S'</p>
+
+#SKILL LIST
+
+skills:
+- {name: Organization, value: '8'}
+- {name: Communication, value: '9'}
+- {name: Learning, value: '10'}
+- {name: Planning, value: '10'}
+- {name: Workaholic, value: '8'}
+- {name: Programming, value: '5'}
+- {name: Visual Design, value: '7'}
+- {name: UX/UI, value: '5'}
+
+#------------------------------------------------------
+# Portfolio Section
+
+projects:
+- {name: Blackbird, folder: 'proj-1'}
+- {name: Artist Theme, folder: 'proj-2'}
+- {name: Crispy Icons, folder: 'proj-3'}
+- {name: Flat Mobile UI/UX, folder: 'proj-4'}
+- {name: Fresh It Up, folder: 'proj-5'}
+- {name: Timeline Page, folder: 'proj-6'}
+- {name: Weather Dashboard, folder: 'proj-7'}
+- {name: Stripes & Co, folder: 'proj-8'}
+
+#------------------------------------------------------
+# Contact Section
+
+social:
+- {icon: 'twitter', link: 'http:twitter/robertmileswilliams'}
+- {icon: 'facebook', link: 'http://www.facebook.com/robertmileswilliams/'}
+- {icon: 'linkedin', link: 'www.linkedin.com/robertmileswilliams/'}
+- {icon: 'pinterest', link: ''}
+- {icon: 'behance', link: ''}
+
+#Program LIST
+
+levels:
+- {name: HTML5, value: '8'}
+- {name: CSS3 / SASS, value: '8'}
+- {name: jQuery, value: '6'}
+- {name: Photoshop, value: '7'}
+- {name: PHP, value: '4'}
+- {name: Illustrator, value: '4'}

@@ -1,0 +1,159 @@
+.about
+  position: relative
+  overflow-x: hidden
+  z-index: 10
+
+  .title
+    @extend %Museo-700
+    font-size: 50px
+    text-align: center
+    @extend %font-accent
+    padding: 69px 0 47px 0
+    text-transform: uppercase
+
+  .belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: all .8s ease
+
+    .face-wrap, .about-wrap
+      width: 50%
+      float: left
+
+      .face-lockup
+        max-width: 780px
+        +display(flex)
+        margin: 0 auto
+        +align-items(center)
+        +justify-content(space-between)
+
+
+        .face
+          +size(200px)
+          background-image: url(/assets/images/face.jpg)
+          margin-bottom: 70px
+          position: relative
+          +order(3)
+
+
+        [class^="icon"]
+          +size(100px)
+          background-color: rgb(210, 217, 221)
+          border-radius: 50%
+          transition: all 0.2s ease
+          position: relative
+          opacity: 0
+          transform: translateY(40px)
+          transition: all 0.6s ease
+
+          &.is-showing
+            opacity: 1
+            transform: translateY(0px)
+
+          svg
+            fill: $accent
+
+          &:hover
+            transform: scale(1.2)
+            cursor: pointer
+
+          &.icon-1
+            +order(1)
+          &.icon-2
+            +order(2)
+          &.icon-3
+            +order(4)
+          &.icon-4
+            +order(5)
+
+
+
+
+
+
+
+
+  .bar
+    border: $accent solid 1px
+    max-width: 580px
+
+  .bar2
+    margin-bottom: 60px
+
+  .blurb
+    max-width: 730px
+    padding: 0 15px
+    margin: 50px auto
+    positon: relative
+    text-align: center
+    line-height: 1.8
+    font:
+      size: 18px
+      family: open sans
+    color: $font
+
+.about-container
+  max-width: 600px
+  margin: 0px auto
+  display: none
+
+
+  .header
+    display: inline-block
+    @extend %Museo-700
+    font-size: 40px
+    text-align: center
+    @extend %font-accent
+    padding-top: 0
+
+
+    text-transform: uppercase
+    position: relative
+
+  .work-return
+    +size(40px)
+    cursor: pointer
+    +position(relative, 75px 0 0 -60px)
+
+    path
+      fill: $accent-light
+
+    &:hover
+      path
+        fill: $accent
+
+@media (max-width: 740px)
+  .about-container
+
+    .work-return
+      +position(relative, 50px 0 0 0px )
+
+    .header
+      left: 60px
+
+@media screen and (max-width: 650px)
+  .face-wrap
+
+    .face-lockup
+      display: block
+      text-align: center
+
+      div
+        display: inline-block
+
+      .face
+        display: block
+        background-position: center center
+        background-repeat: no-repeat
+        width: auto
+        margin-bottom: 30px
+
+
+
+      [class^="icon-"]
+        margin: 10px
+
+  .bar
+    width: auto
+    margin: 0 40px

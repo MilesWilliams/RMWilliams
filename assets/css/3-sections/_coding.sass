@@ -1,0 +1,117 @@
+.h1
+  @extend %Museo-700
+  color: $accent
+  text-align: center
+  font-size: 40px
+  text-transform: uppercase
+  width: 600px
+
+.cms-lockup
+  width: 500px
+  margin: 0 auto 40px auto
+  +display(flex)
+  +align-items(center)
+
+  .cms
+    +size(100px)
+    text-align: center
+    margin: 0 auto
+    background-color: rgb(210, 217, 221)
+    border-radius: 50%
+
+    .cms-icon
+      +size(100px)
+      color: #3b8995
+
+      path
+        fill: $accent
+
+
+.brief
+  width: 600px
+  font-family: 'open sans'
+  color: #666666
+  text-align: center
+  margin: 30px auto
+  line-height: 1.5
+  font-size: 18px
+
+.sub-title
+  @extend %Museo-500
+  color: $accent
+  text-align: center
+  font-size: 35px
+
+.h5
+  @extend %Museo-300
+  color: $accent-light
+  text-align: center
+  font-size: 20px
+  text-decoration: underline
+  width: 600px
+
+
+.h6
+  color: #666666
+  font:
+    size: 18px
+    family: 'open sans'
+  text-align: center
+  width: 600px
+  margin: 15px auto 30px auto
+
+h2
+  @extend %Museo-700
+  color: $accent
+  text-align: center
+  font-size: 30px
+  text-transform: uppercase
+  width: 600px
+
+
+.program-lockup
+  width: 600px
+  color: $accent-light
+  margin: 0 auto
+  +clearfix
+
+  .program-unit
+    width: 300px
+    float: left
+
+    .program-label
+      @extend %Museo-500
+      font-size: 18px
+
+    .program-icon
+      font-size: 0
+      margin: 2px 0 30px
+
+      span
+        display: inline-block
+        +size(14px)
+        background-color: rgb(210, 217, 221)
+        border-radius: 50%
+        margin-right: 5px
+        transition: all 0.2s ease-in-out
+
+        &:after
+          content: ''
+          display: block
+          +size(10px)
+          background: #fff
+          border-radius: 50%
+          margin: 2px
+
+        &:hover
+          transform: scale(1.5)
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(-n+#{$i})
+          background-color: $accent
+.bar
+  border: $accent solid 1px
+  max-width: 580px
+.bar2
+  margin-bottom: 60px
+  border: $accent solid 1px
+  max-width: 580px

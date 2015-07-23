@@ -1,0 +1,60 @@
+.skills
+  height: 440px
+
+
+  h3
+    @extend %Museo-700
+    color: $accent
+    font:
+      size: 50px
+    text-align: center
+    margin: 69px 0 72px 0
+    text-transform: uppercase
+
+
+
+  .skill-lockup
+    width: 780px
+    color: $accent
+    margin: 0 auto
+    +clearfix
+
+    .skill-unit
+      width: 390px
+      float: left
+
+      .skill-label
+        @extend %Museo-500
+        font-size: 18px
+
+      .skill-icon
+        font-size: 0
+        margin: 2px 0 30px
+
+        span
+          display: inline-block
+          +size(14px)
+          background-color: rgb(210, 217, 221)
+          border-radius: 50%
+          margin-right: 5px
+          transition: all 0.2s ease-in-out
+
+          &:after
+            content: ''
+            display: block
+            +size(10px)
+            background: #fff
+            border-radius: 50%
+            margin: 2px
+
+          &:hover
+            transform: scale(1.5)
+
+        @for $i from 1 through 10
+          &.skill-#{$i} span:nth-child(-n+#{$i})
+            @extend %skill-color
+
+  @media screen and(max-width:540px)
+    .skill-lockup
+      width: 270px
+      margin-bottom: 600px

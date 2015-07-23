@@ -1,0 +1,81 @@
+
+#portfolio
+  z-index: 160
+  height: 300px
+
+  h1
+    @extend %Museo-700
+    color: $accent
+    font:
+      size: 50px
+    text-align: center
+    margin: 69px 0 72px 0
+    text-transform: uppercase
+
+.portfolio-container
+  max-width: 960px
+  height: 100%
+  margin: 0 auto
+  padding-bottom: 110px
+
+  @media screen and (max-width: 540px)
+    margin: 0
+
+  .project-unit
+    text-decoration: none
+    color: $accent
+    font-family: "open sans"
+    width: 25%
+    background: pink
+    padding-top: 16%
+    display: block
+    float: left
+    position: relative
+    background:
+      position: center center
+      repeat: no-repeat
+      size: cover
+    @media screen and (max-width: 760px)
+      width: 50%
+      padding-top: 30%
+      font-size: 20px
+
+
+    .project-overlay
+      +position(absolute, 0% 0px null 0px)
+      background: transparentize($accent, 0.4)
+      height: 100%
+      text-align: center
+      color: white
+      font-family: "open sans"
+      text-transform: uppercase
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-around)
+      +transform(matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1))
+      opacity: 0
+      +transition(opacity, 300ms)
+
+
+      strong
+        display: block
+
+
+
+    &:hover
+      z-index: 165
+
+      .project-overlay
+        @extend %animation
+        opacity: 1
+.description
+  max-width: 730px
+  padding: 0 15px
+  margin: 50px auto
+  position: relative
+  text-align: center
+  line-height: 1.8
+  font:
+    size: 18px
+    family: open sans
+  color: $font
