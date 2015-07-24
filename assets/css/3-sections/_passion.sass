@@ -5,6 +5,11 @@
   padding: 170px 0 0 0
   background-size: cover
   overflow: hidden
+@media screen and (max-width: 650px)
+  #slide3
+    height: 200px
+    width: 100%
+    background-size: cover
 
 .content
   overflow: hidden
@@ -24,6 +29,13 @@
     flex-direction: column
     margin: 0 auto 0 auto
 
+  @media screen and (max-width: 650px)
+    .quotes
+      font-size: 15px
+      width: 400px
+      margin-top: 50px
+
+
   h4
     color: $font
     @extend %Museo-300
@@ -39,3 +51,7 @@
     padding: 34px 0 0 0
     margin: 0
     flex-direction: column
+
+  @media screen and (max-width: 650px)
+    h4
+      font-size: 14px

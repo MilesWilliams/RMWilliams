@@ -7,6 +7,14 @@
   background-size: cover
   overflow: hidden
 
+@media screen and (max-width: 540px)
+  .slide5
+    width: 100%
+    height: 200px
+    background-size: cover
+
+
+
   .jumper
     height: 100%
     width: 100%
@@ -19,7 +27,31 @@
     top: 50%
     transform: translate(100px, 100px)
 
+  @media screen and (max-width: 540px)
+    .jumper
+      display: none
+
 
   .jump
     overflow: hidden
     margin-top: -200px
+
+    .quotes
+      width: 620px
+      @extend %Museo-300
+      color: $font-light
+      font-size: 24px
+      font-weight: 300
+      line-height: 1.4em
+      display: block
+      position: relative
+      text-align: center
+      display: flex
+      flex-direction: column
+      margin: 0 auto 0 auto
+
+    @media screen and (max-width: 650px)
+      .quotes
+        font-size: 15px
+        width: 400px
+        margin: 20 0 0 0

@@ -11,6 +11,12 @@
     padding: 69px 0 47px 0
     text-transform: uppercase
 
+  @media screen and (max-width: 650px)
+    .title
+      font-size: 28px
+      margin-bottom: 30px
+      padding: 0
+
   .belt
     width: 200%
     position: relative
@@ -66,6 +72,24 @@
             +order(4)
           &.icon-4
             +order(5)
+      @media screen and (max-width: 650px)
+        .face-lockup
+          display: block
+          text-align: center
+
+          div
+            display: inline-block
+
+          .face
+            display: block
+            background:
+              position: center center
+              repeat: no-repeat
+              width: auto
+            margin: 0 auto 30px auto
+
+          [class^="icon"]
+            margin: 3px
 
 
 
@@ -92,6 +116,7 @@
       size: 18px
       family: open sans
     color: $font
+
 
 .about-container
   max-width: 600px
@@ -133,26 +158,25 @@
       left: 60px
 
 @media screen and (max-width: 650px)
-  .face-wrap
+  .title
+    font-size: 18px
 
-    .face-lockup
+  .face-lockup
+    display: flex
+    text-align: center
+
+    div
       display: block
-      text-align: center
 
-      div
-        display: inline-block
+    .face-img
+      display: block
+      background:
+        position: center center
+        repeat: no-repeat
+      margin: 0 auto 10px
 
-      .face
-        display: block
-        background-position: center center
-        background-repeat: no-repeat
-        width: auto
-        margin-bottom: 30px
-
-
-
-      [class^="icon-"]
-        margin: 10px
+    [class^="icon-"]
+      margin: 10px 5%
 
   .bar
     width: auto
