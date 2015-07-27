@@ -365,7 +365,7 @@
 }
 
 /* line 6, 2-base/placeholders.sass */
-#nav .nav-item, .content .quotes, .content h4, .h5 {
+#nav .nav-item, .content .quotes, .content h4, .slide5 .jump .quotes, .h5 {
   font-family: Museo-300;
   font-weight: normal;
   font-style: normal;
@@ -944,63 +944,58 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
-@media screen and (max-width: 540px) {
-  /* line 11, 3-sections/_freefalling.sass */
-  .slide5 {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-  }
-
-  /* line 18, 3-sections/_freefalling.sass */
-  .jumper {
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1;
-    position: absolute;
-    right: 30%;
-    top: 50%;
-    transform: translate(100px, 100px);
-  }
-
-  /* line 35, 3-sections/_freefalling.sass */
-  .jump {
-    overflow: hidden;
-    margin-top: -200px;
-  }
-  /* line 39, 3-sections/_freefalling.sass */
-  .jump .quotes {
-    width: 620px;
-    color: #bcbcbd;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.4em;
-    display: block;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 0 auto;
-  }
+/* line 10, 3-sections/_freefalling.sass */
+.slide5 .jumper {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translate(100px, 100px);
 }
-@media screen and (max-width: 540px) and (max-width: 540px) {
-  /* line 31, 3-sections/_freefalling.sass */
-  .jumper {
-    display: none;
-  }
+/* line 24, 3-sections/_freefalling.sass */
+.slide5 .jump {
+  overflow: hidden;
+  margin-top: -200px;
 }
-@media screen and (max-width: 540px) and (max-width: 650px) {
-  /* line 54, 3-sections/_freefalling.sass */
-  .jump .quotes {
+/* line 28, 3-sections/_freefalling.sass */
+.slide5 .jump .quotes {
+  width: 620px;
+  color: #bcbcbd;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.4em;
+  display: block;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 43, 3-sections/_freefalling.sass */
+  .quotes {
     font-size: 15px;
     width: 400px;
     margin: 20 0 0 0;
   }
 }
-
+@media screen and (max-width: 540px) {
+  /* line 49, 3-sections/_freefalling.sass */
+  .slide5 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  /* line 54, 3-sections/_freefalling.sass */
+  .slide5 .jumper {
+    display: none;
+  }
+}
 /* line 2, 3-sections/_portfolio.sass */
 #portfolio {
   z-index: 160;
